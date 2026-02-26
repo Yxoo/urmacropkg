@@ -1,5 +1,7 @@
-# Markdown (sauf README.md conservé localement, non versionné)
-*.md
+# Markdown
+CLAUDE.md
+
+# (README.md versionné)
 
 # Python
 __pycache__/
