@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "urmacropkg"
+version = "1.0.0"
+description = "Windows macro input API — keyboard, mouse, window & pixel"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["macro", "automation", "windows", "input", "keyboard", "mouse", "sendinput"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "pywin32",
+    "Pillow",
+]
+
+[project.optional-dependencies]
+ocr = ["winocr"]
+
+[project.urls]
+Homepage = "https://github.com/<user>/urmacro"
+Issues   = "https://github.com/<user>/urmacro/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["urmacro*"]
